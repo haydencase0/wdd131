@@ -8,11 +8,6 @@ body{
     padding: 1%;
     background-color: lightgray;
 }
-.right {
-  position: absolute;
-  right: 0;
-  margin-right: 10%;
-}
 p{
     color: rgb(64, 128, 173);
 }
@@ -38,4 +33,5 @@ ul{
     text-align-last: 10px;
     text-align: left;
     text-wrap: auto;
+
 }
