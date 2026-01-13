@@ -1,0 +1,36 @@
+body{
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 50%;
+    border: 1px solid gray;
+    padding: 1%;
+    background-color: lightgray;
+}
+p{
+    color: rgb(64, 128, 173);
+}
+hr {
+    border: 1px solid rgb(64, 128, 173);
+    width: 70%;
+}
+img{
+    width: 350px;
+}
+ul{
+    list-style-type: none;
+}
+#topics h2{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+#topics ul{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 15px;
+    text-align-last: 10px;
+    text-align: left;
+    text-wrap: auto;
+}
