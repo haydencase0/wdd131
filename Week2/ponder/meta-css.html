@@ -19,21 +19,27 @@
         <hr>
         <img src="https://wddbyui.github.io/wdd131/images/trifecta.png" alt="JS, CSS, and HTML logos">
         <div id="topics">
-            <h2>HyperText Markup Language</h2>
-            <ul class="list">
-                <li>Defines the structure and content of a web page.</li>
-                <li>Without HTML there's nothing for the browser to display.</li>
-            </ul>
-            <h2>Cascading Style Sheets</h2>
-            <ul class="list">
-                <li>Controls how the HTML elements look.</li>
-                <li>Without CSS pages look plain and unstyled.</li>
-            </ul>
-            <h2>JavaScript</h2>
-            <ul class="list">
-                <li>Adds interactivity and dynamic behavior.</li>
-                <li>Without JavaScript nothing on the page responds dynamically to user actions.</li>
-            </ul>
+            <div id="html">
+                <h2>HyperText Markup Language</h2>
+                <ul class="list">
+                    <li>Defines the structure and content of a web page.</li>
+                    <li>Without HTML there's nothing for the browser to display.</li>
+                </ul>
+            </div>
+            <div id="css">
+                <h2>Cascading Style Sheets</h2>
+                <ul class="list">
+                    <li>Controls how the HTML elements look.</li>
+                    <li>Without CSS pages look plain and unstyled.</li>
+                </ul>
+            </div>
+            <div id="js">
+                <h2>JavaScript</h2>
+                <ul class="list">
+                    <li>Adds interactivity and dynamic behavior.</li>
+                    <li>Without JavaScript nothing on the page responds dynamically to user actions.</li>
+                </ul>
+            </div>
         </div>
         <label for="webdevlist">Choose One:</label>
         <select name="code" id="webdevlist">
@@ -49,15 +55,20 @@
         selectElem.addEventListener('change', function(){
             let codeValue = selectElem.value;
             console.log(codeValue);
+            
             if (codeValue === 'html'){
+                document.getElementById("html").style.color = "white";
+                document.getElementById("html").style.backgroundColor = "black";
                 document.querySelector("li").textContent = "I have changed!";
+                
             }
-            else if (codeValue === "css"){
-                document.getElementById("topics").style.color = "red";
+            if (codeValue === "css"){
+                document.getElementById("css").style.backgroundColor = "blue";
             }
-            else if (codeValue === 'js'){
-                document.getElementById(codeValue).style.color = "red";
+            if (codeValue === 'js'){
+                document.getElementById("js").style.backgroundColor = "yellow";
             }
+            
         });
     </script>
 </body>
