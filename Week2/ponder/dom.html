@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>metatags</title>
     <link rel="stylesheet" href="dom.css">
-    
+    <script src="./dom.js" defer></script>
     
 </head>
 <body>
@@ -49,32 +49,6 @@
             <option value="js">JavaScript</option>
         </select>                   
     </div>
-
-    <script>
-        let selectElem = document.getElementById('webdevlist');
-        selectElem.addEventListener('change', function(){
-            let codeValue = selectElem.value;
-            console.log(codeValue);
-            
-            if (codeValue === 'html'){
-                document.getElementById("html").style.backgroundColor = "darkgrey";
-                document.getElementById("js").style.backgroundColor = "lightgrey";
-                document.getElementById("css").style.backgroundColor = "lightgrey";
-                document.querySelector("li").textContent = "This is where the HTML explanation would be if we had one.";
-            }
-            if (codeValue === "css"){
-                document.getElementById("css").style.backgroundColor = "lightblue";
-                document.getElementById("html").style.backgroundColor = "lightgrey";
-                document.getElementById("js").style.backgroundColor = "lightgrey";
-            }
-            if (codeValue === 'js'){
-                document.getElementById("js").style.backgroundColor = "yellow";
-                document.getElementById("html").style.backgroundColor = "lightgrey";
-                document.getElementById("css").style.backgroundColor = "lightgrey";
-            }
-            
-        });
-    </script>
 </body>
 </html>
     
