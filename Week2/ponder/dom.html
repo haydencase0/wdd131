@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>metatags</title>
-    <link rel="stylesheet" href="meta-css.css">
+    <link rel="stylesheet" href="dom.css">
     
     
 </head>
@@ -57,16 +57,20 @@
             console.log(codeValue);
             
             if (codeValue === 'html'){
-                document.getElementById("html").style.color = "white";
-                document.getElementById("html").style.backgroundColor = "black";
-                document.querySelector("li").textContent = "I have changed!";
-                
+                document.getElementById("html").style.backgroundColor = "darkgrey";
+                document.getElementById("js").style.backgroundColor = "lightgrey";
+                document.getElementById("css").style.backgroundColor = "lightgrey";
+                document.querySelector("li").textContent = "This is where the HTML explanation would be if we had one.";
             }
             if (codeValue === "css"){
-                document.getElementById("css").style.backgroundColor = "blue";
+                document.getElementById("css").style.backgroundColor = "lightblue";
+                document.getElementById("html").style.backgroundColor = "lightgrey";
+                document.getElementById("js").style.backgroundColor = "lightgrey";
             }
             if (codeValue === 'js'){
                 document.getElementById("js").style.backgroundColor = "yellow";
+                document.getElementById("html").style.backgroundColor = "lightgrey";
+                document.getElementById("css").style.backgroundColor = "lightgrey";
             }
             
         });
