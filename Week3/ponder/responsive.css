@@ -47,24 +47,21 @@ footer {
     text-align: center;
 }
           
-@media screen and (min-width: 700px) {
+@media (min-width: 600px) {
     header,
     main,
     footer {
-        display: flex;
-        flex-direction: column;
-    }
-}
-@media screen and (min-width: 800px) {
-    header,
-    main,
-    footer {
+        background-color: blue;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
     }
-    section{
-        flex: 50%;
+}
+@media (min-width: 1000px) {
+    header,
+    main,
+    footer {
+        background-color: red;
+        display: flex;
     }
 }
           
