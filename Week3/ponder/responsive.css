@@ -2,29 +2,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-  font-family: Roboto, sans-serif;
+    font-family: Roboto, sans-serif;
 }
 header,
 main,
 footer {
-  max-width: 1000px;
-  margin: 1rem auto;
-  border: 1px solid #ccc;
-  padding: 1rem;
-  background-color: lightblue;
+    max-width: 1000px;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 h1 {
     text-align: center;
 }
 section {
-  padding: 20px;
-  flex: 25%;
-  background-color: white;
-  margin: 1em;
-  border: 1px solid #ccc;
+    padding: 20px;
+    background-color: white;
+    margin: 1em;
+    border: 1px solid #ccc;
 }
 nav a {
-    padding: 20px;
+    padding: 0px;
     color: black;
     display: none;
 }
@@ -46,22 +47,28 @@ nav a:hover {
 footer {
     text-align: center;
 }
+
+@media screen and (min-width: 700px) {
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .menu-btn{
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+    nav a {
+        display: inline-block;
+    }
+}
+@media screen and (min-width: 1000px) {
+    main {
+        grid-template-columns: auto auto auto;
+    }
+}
           
-@media (min-width: 600px) {
-    header,
-    main,
-    footer {
-        background-color: blue;
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-@media (min-width: 1000px) {
-    header,
-    main,
-    footer {
-        background-color: red;
-        display: flex;
-    }
-}
           
