@@ -25,7 +25,7 @@ section {
     border: 1px solid #ccc;
 }
 nav a {
-    padding: 0px;
+    padding: 20px;
     color: black;
     display: none;
 }
@@ -45,7 +45,7 @@ nav a:hover {
     margin: 5px 0;
 }
 footer {
-    text-align: center;
+    text-align: left;
 }
 
 @media screen and (min-width: 700px) {
