@@ -50,7 +50,12 @@ nav a:hover {
 footer {
     text-align: left;
 }
-
+.bar1,
+.bar3 {
+    transition: transform 0.7s ease-in-out;
+}
+.bar2 {opacity: 1;}
+ 
 .open .bar1 {
     transition: transform 0.7s ease-in-out;
     transform: translate(0, 8px) rotate(-45deg);
@@ -61,8 +66,7 @@ footer {
     transition: transform 0.7s ease-in-out;
     transform: translate(0, -11px) rotate(45deg);
 }
-          
-
+    
 @media screen and (min-width: 700px) {
     main {
         display: grid;
