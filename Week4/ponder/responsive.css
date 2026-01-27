@@ -25,9 +25,11 @@ section {
     border: 1px solid #ccc;
 }
 nav a {
+    border-top: 2px solid black;
     padding: 20px;
     color: black;
     display: none;
+    text-align: center;
 }
 nav.active a{
     display: block;
