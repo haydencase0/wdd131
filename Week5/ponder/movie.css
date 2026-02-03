@@ -26,12 +26,20 @@ header, footer {
     padding: 0 2rem;
 }
 .movie {
+    display: grid;
     border: 2px solid #ccc;
     padding: 1rem;
     border-radius: 10px;
     max-width: 700px;
     margin: 20px auto;
-    grid-column: 1/3;
+    grid-template-areas:
+        "title"
+        "image"
+        "release"
+        "age"
+        "genre"
+        "rating"
+        "desc";
 }
 .movie h2 {
     color: #b30059;
@@ -47,14 +55,22 @@ header, footer {
     display: block;
     border-radius: 8px;
     margin: 0 auto;
+    grid-area: image;
 }
 #desc {
-    grid-column: 1/3;
+    grid-area: desc;
 }
 
 @media (min-width: 600px) {
     .movie{
-        grid-column: 1/2;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+            "image title"
+            "image release"
+            "image age"
+            "image genre"
+            "image rating"
+            "desc desc"; 
     }
 }
           
