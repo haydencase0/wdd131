@@ -1,0 +1,81 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header, footer {
+    padding: 1rem;
+    text-align: center;
+}
+footer{
+    border-top: 2px solid #f4c430;
+}
+nav{
+    border-bottom: 2px solid #f4c430;
+    border-top: 2px solid #f4c430;
+}
+main {
+    border-top: 2px solid #f4c430;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.main-nav {
+    list-style: none;
+    padding: 0;
+    gap: 1rem;
+    display: flex;
+    justify-self: end;
+}
+.main-nav li {
+    padding: 8px;
+}
+.main-nav a {
+    color: #b30059;
+    text-decoration: none;
+}
+#book-list {
+    padding: 0 2rem;
+}
+.book {
+    display: grid;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 20px auto;
+    grid-template-areas:
+        "release"
+        "age"
+        "genre"
+        "rating"    
+        "title"
+        "image"
+        "desc";
+}
+.book h2 {
+    color: #b30059;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px;
+    grid-area: title;
+}
+.book p {
+    padding-left: 20px;
+    text-align: right;
+}
+.book img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+    margin: 0 auto;
+    grid-area: image;
+}
+#desc {
+    grid-area: desc;
+}
+
+
+          
