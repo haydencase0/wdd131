@@ -1,4 +1,43 @@
-ul, a{
-    list-style-type: none;
-    margin-left: 20rem;
+main {
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+section {
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section li {
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  margin-bottom: 0.75rem;
+}
+
+#student-list {
+  list-style: none;
+  padding: 0;
+}
+
+.student-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.student-name {
+  font-weight: 500;
+}
+
+.student-grade {
+  font-weight: bold;
 }

@@ -6,29 +6,33 @@ const students = [
 ]; // give student a grade
 
 const ulword = document.querySelector('#words');
-const ulname = document.querySelector('#name');
-const ulgrade = document.querySelector('#grade');
-const average = document.querySelector('#average');
+const studentList = document.querySelector('#student-list');
+const average = document.querySelector('#average p');
 
 let html = '';
 words.forEach((word) =>{
+    console.log(word);
     html += `<li>${word}</li>`;
 });
 ulword.innerHTML = html;
 
 html = '';
-students.forEach((student) =>{
-    html += `<li>${student.first} ${student.last}</li>`;
-});
-ulname.innerHTML = html;
-
-html = '';
 students.forEach(student => {
-    html += `<li>${student.grade}</li>`;
+    console.log(student);
+    html += `
+        <li class="student-row">
+        <span class="student-name">${student.first} ${student.last}</span>
+        <span class="student-grade">${student.grade}</span>
+        </li>
+    `;
 });
-ulgrade.innerHTML = html;
+
+studentList.innerHTML = html;
+
 
 let avg = students.reduce((total, student) => total += convert(student.grade), 0);
+console.log(students.reduce((total, student) => total += convert(student.grade), 0));
+console.log(avg/students.length);
 average.innerHTML = `The average grade score for all students is: ${(avg/students.length).toFixed(2)}`;
 
 function convert(grade) {
