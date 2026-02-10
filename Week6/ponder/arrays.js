@@ -1,22 +1,38 @@
 const words = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
 const students = [
-    {last: 'Andrus', first: 'Aaron'},
-    {last: 'Masa', first:'Manny'},
-    {last: 'Tanda', first: 'Tamanda'}
+    {last: 'Andrus', first: 'Aaron', grade: 'A'},
+    {last: 'Masa', first:'Manny', grade: 'C'},
+    {last: 'Tanda', first: 'Tamanda', grade: 'D'}
 ]; // give student a grade
 
-students.foreach((student, index) => {
+const ulword = document.querySelector('#words');
+const ulname = document.querySelector('#name');
+const ulgrade = document.querySelector('#grade');
+const average = document.querySelector('#average');
 
-});
-
-const ul = queryS
 let html = '';
 words.forEach((word) =>{
-    html+= `<li>${word}</li>`;
+    html += `<li>${word}</li>`;
 });
-ul.innerHTML = html;
+ulword.innerHTML = html;
+
+html = '';
+students.forEach((student) =>{
+    html += `<li>${student.first} ${student.last}</li>`;
+});
+ulname.innerHTML = html;
+
+html = '';
+students.forEach(student => {
+    html += `<li>${student.grade}</li>`;
+});
+ulgrade.innerHTML = html;
+
+let avg = students.reduce((total, student) => total += convert(student.grade), 0);
+average.innerHTML = `The average grade score for all students is: ${(avg/students.length).toFixed(2)}`;
 
 function convert(grade) {
+    let points = 0;
     switch (grade){
         case 'A':
             points = 4;
