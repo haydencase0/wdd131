@@ -19,7 +19,6 @@ nav{
 main {
     border-top: 2px solid #f4c430;
     margin-top: 3rem;
-    padding-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -59,10 +58,15 @@ main {
     color: #b30059;
     font-size: 1.5rem;
     text-align: center;
-    margin: 20px;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
     grid-area: title;
 }
-.book p {
+.book p,
+.book i {
+    margin-top: 0px;
+    margin-bottom: 5px;
     padding-left: 20px;
     text-align: right;
 }
@@ -75,6 +79,7 @@ main {
 }
 #desc {
     grid-area: desc;
+    text-align: left;
 }
 
 @media (min-width: 700px) {
@@ -91,6 +96,8 @@ main {
             "age     title"
             "genre   image"
             "rating  image"
+            "blank  image"
+            "blank  image"
             "meta    desc"; 
         max-width: 700px;
         margin: 20px auto;
@@ -100,22 +107,26 @@ main {
     .book h2{
         text-align: left;
     }
-    .book p{
+    .book p,
+    .book i {
         padding-left: 0;
         padding-right: 1rem;
         margin: 0.2rem 0;
         line-height: 1.2;
         text-align: right;
     }
-    .book p:nth-of-type(1) { grid-area: release; }
-    .book p:nth-of-type(2) { grid-area: age; }
-    .book p:nth-of-type(3) { grid-area: genre; }
-    .book p:nth-of-type(4) { grid-area: rating; }
+    .book i { grid-area: release; }
+    #age    { grid-area: age; }
+    #genre  { grid-area: genre; }
+    #rating { grid-area: rating; }
     .book::before {
         content: "";
         grid-column: 1;
         grid-row: 1 / -1;
-        border-right: 2px solid #f4c430;
+        justify-self: end;
+        width: 2px;
+        background-color: #f4c430;
     }
+
 }
           
