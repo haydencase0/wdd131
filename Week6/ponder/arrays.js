@@ -11,24 +11,20 @@ const average = document.querySelector('#average p');
 
 let html = '';
 words.forEach((word) =>{
-    console.log(word);
-    html += `<li>${word}</li>`;
+    const li = document.createElement('li');
+    li.textContent = word;
+    ulword.appendChild(li);
 });
-ulword.innerHTML = html;
 
-html = '';
 students.forEach(student => {
     console.log(student);
     html += `
         <li class="student-row">
         <span class="student-name">${student.first} ${student.last}</span>
         <span class="student-grade">${student.grade}</span>
-        </li>
-    `;
+        </li>`;
 });
-
 studentList.innerHTML = html;
-
 
 let avg = students.reduce((total, student) => total += convert(student.grade), 0);
 console.log(students.reduce((total, student) => total += convert(student.grade), 0));
