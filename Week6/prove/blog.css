@@ -1,0 +1,131 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header, footer {
+    padding: 1rem;
+    text-align: center;
+}
+footer{
+    border-top: 2px solid #f4c430;
+}
+nav{
+    border-bottom: 2px solid #f4c430;
+    border-top: 2px solid #f4c430;
+}
+main {
+    border-top: 2px solid #f4c430;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.main-nav {
+    list-style: none;
+    padding: 0;
+    gap: 1rem;
+    display: flex;
+    justify-self: end;
+}
+.main-nav li {
+    padding: 8px;
+}
+.main-nav a {
+    color: #b30059;
+    text-decoration: none;
+}
+#book-list {
+    padding: 0 2rem;
+}
+.book {
+    display: grid;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 20px auto;
+    grid-template-areas:
+        "release"
+        "age"
+        "genre"
+        "rating"    
+        "title"
+        "image"
+        "desc";
+}
+.book h2 {
+    color: #b30059;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-area: title;
+}
+.book p,
+.book i {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    text-align: right;
+}
+.book img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+    margin: 0 auto;
+    grid-area: image;
+}
+#desc {
+    grid-area: desc;
+    text-align: left;
+}
+
+@media (min-width: 700px) {
+    main{
+        border-top: 2px #f4c430;;
+    }
+    .book{
+        grid-auto-rows: min-content;
+        grid-template-columns: 10rem auto;
+        row-gap: 0.25rem;
+        column-gap: 1rem;
+        grid-template-areas:
+            "release title"
+            "age     title"
+            "genre   image"
+            "rating  image"
+            "blank  image"
+            "blank  image"
+            "meta    desc"; 
+        max-width: 700px;
+        margin: 20px auto;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .book h2{
+        text-align: left;
+    }
+    .book p,
+    .book i {
+        padding-left: 0;
+        padding-right: 1rem;
+        margin: 0.2rem 0;
+        line-height: 1.2;
+        text-align: right;
+    }
+    .book i { grid-area: release; }
+    #age    { grid-area: age; }
+    #genre  { grid-area: genre; }
+    #rating { grid-area: rating; }
+    .book::before {
+        content: "";
+        grid-column: 1;
+        grid-row: 1 / -1;
+        justify-self: end;
+        width: 2px;
+        background-color: #f4c430;
+    }
+}
+          
