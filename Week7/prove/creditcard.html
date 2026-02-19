@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Validation</title>
+    <link rel="stylesheet" href="creditcard.css"/>
+    <script src="creditcard.js" defer></script>
+</head>
+<body>
+    <main>
+        <form id="checkoutForm" action="completed.html" method="get">
+            
+            <!-- Container for credit card details -->
+            <p id="creditCardNumberContainer" class="hide" role="region" aria-labelledby="creditCardLabel">
+                <label id="creditCardLabel" for="creditCardNumber">CARD NUMBER </label>
+                <input
+                    type="text"
+                    id="creditCardNumber"
+                    name="creditCardNumber"
+                    pattern="[0-9]{16}"
+                    placeholder="Enter 16 digits"
+                    required
+                />
+            </p>
+            <div id="cardExpiration">
+                <label for="expirationDate">EXPIRATION</label>
+                <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate">
+                <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate">
+            </div>
+            <div id="cardHolder">
+                <label for="fullName">CARD HOLDER</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div id="securityCode">
+                <label for="expirationDate">CVC/CVV</label>
+                <input type='text' id='security' name="securityNumbers" placeholder="xxx" aria-labelledby="CVC/CVVcode">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
