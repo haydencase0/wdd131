@@ -1,28 +1,87 @@
-
-/* form-demo.css */
-body {
-    font-size: 1.2em;
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "front front blank"
+        "front front back"
+        "blank back back"
+        "blank blank button"
 }
-form {
-    width: 50%;
-    margin: 0 auto;
+.card-container {
+    width: 400px;
+    margin: 3rem auto;
 }
-h1, h2 {
+.card {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: #d3d3d3;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+.back-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "blank stripe"
+        "blank blank"
+        "blank security";
+    gap: 1rem;
+    top: 40px;
+    left: 40px;
+    position: relative;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    z-index: 1;
+}
+.black-strip {
+    height: 40px;
+    background: black;
+    margin-bottom: 2rem;
+}
+#securityCode{
+    grid-area: security;
+}
+.front-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "total logo"
+        "number number"
+        "holder exp";
+    gap: 1rem;
+    position: relative;
+    z-index: 2;
+}
+.total {
+    grid-area: total;
+}
+.logo {
+    grid-area: logo;
+    justify-self: end;
+}
+#creditCardNumberContainer {
+    grid-area: number;
+}
+#creditCardNumberContainer label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+#cardHolder {
+    grid-area: holder;
+}
+#cardExpiration {
+    grid-area: exp;
+    justify-self: start;
+}
+.exp-inputs {
+    display: flex;
+    gap: 0.5rem;
+}
+.exp-inputs input {
+    width: 3rem;
     text-align: center;
 }
-label {
-    display: block;
-    margin-bottom: 8px;
+.bottom-row {
+    justify-content: space-between;
 }
-
-input,
-select,
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc; /* Add a border to make it visually consistent */
-    border-radius: 4px;
-}
-       
