@@ -9,32 +9,43 @@
 </head>
 <body>
     <main>
-        <form id="credit-card" action="completed.html" method="get">
-            <p id="creditCardNumberContainer" class="hide" role="region" aria-labelledby="creditCardLabel">
-                <label id="creditCardLabel" for="creditCardNumber">CARD NUMBER </label>
-                <input
-                    type="text"
-                    id="creditCardNumber"
-                    name="creditCardNumber"
-                    pattern="[0-9]{16}"
-                    placeholder="Enter 16 digits"
-                    required
-                />
-            </p>
-            <div id="cardExpiration">
-                <label for="expirationDate">EXPIRATION</label>
-                <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate">
-                <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate">
-            </div>
-            <div id="cardHolder">
-                <label for="fullName">CARD HOLDER</label>
-                <input type="text" id="fullName" name="fullName" required>
-            </div>
-            <div id="securityCode">
-                <label for="expirationDate">CVC/CVV</label>
-                <input type='text' id='security' name="securityNumbers" placeholder="xxx" aria-labelledby="CVC/CVVcode">
-            </div>
-        </form>
+        <section class="card-container">
+            <form id="credit-card" action="completed.html" method="get">
+                <div class="card front-card">
+                    <p class="total">TOTAL: $199</p>
+                    <p class="logo" aria-label="">💳</p>
+                    <p id="creditCardNumberContainer" class="hide" role="region" aria-labelledby="creditCardLabel">
+                        <label id="creditCardLabel" for="creditCardNumber">CARD NUMBER </label>
+                        <input
+                            type="text"
+                            id="creditCardNumber"
+                            name="creditCardNumber"
+                            pattern="[0-9]{16}"
+                            placeholder="Enter 16 digits"
+                            required
+                        />
+                    </p>
+                    <div id="cardHolder">
+                        <label for="fullName">CARD HOLDER</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div id="cardExpiration">
+                        <label for="expirationDate">EXPIRATION</label>
+                        <div class="exp-inputs">
+                            <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate">
+                            <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate">
+                        </div>
+                    </div>
+                </div>
+                <div class="card back-card">
+                    <div class="black-strip"></div>
+                    <div id="securityCode">
+                        <label for="security">CVC/CVV</label>
+                        <input type='text' id='security' name="securityNumbers" placeholder="xxx" aria-labelledby="CVC/CVVcode">
+                    </div>
+                </div>
+            </form>
+        </section>
     </main>
 </body>
 </html>
