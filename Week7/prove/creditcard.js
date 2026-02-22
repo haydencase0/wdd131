@@ -44,7 +44,6 @@ function submitHandler(event) {
 		return;
     }
     document.querySelector("#message").textContent = "Payment submitted successfully!";
-    console.log("Submit handler running");
 }
   
 document.querySelector('#credit-card').addEventListener('submit', submitHandler);
