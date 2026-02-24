@@ -1,0 +1,17 @@
+main{
+    margin-left: 500px;
+    margin-top: 50px;
+}
+table{
+    margin-top: 10px;
+    margin-left: 15px;
+    border: 2px solid black;
+}
+td{
+    padding-right: 20px;
+}
+img{
+    margin-top: 10px;
+    margin-left: 35px;
+    width: 300px;
+}
