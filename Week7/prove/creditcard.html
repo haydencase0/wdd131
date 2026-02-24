@@ -9,8 +9,9 @@
 </head>
 <body>
     <main>
+        <section class="errors"></section>
         <section class="card-container">
-            <form id="credit-card" action="completed.html" method="get">
+            <form id="credit-card" action="#" method="get">
                 <div class="card front-card">
                     <p class="total">TOTAL: $199</p>
                     <p class="logo" aria-label="">💳</p>
@@ -26,24 +27,28 @@
                         />
                     </p>
                     <div id="cardHolder">
-                        <label for="fullName">CARD HOLDER</label>
-                        <input type="text" id="fullName" name="fullName" required>
+                        <label id="nameLabel" for="fullName">CARD HOLDER</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="John Doe" aria-labelledby="nameLabel" required>
                     </div>
-                    <div id="cardExpiration">
-                        <label for="expirationDate">EXPIRATION</label>
+                    <fieldset id="cardExpiration">
+                        <legend>EXPIRATION</legend>
                         <div class="exp-inputs">
-                            <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate">
-                            <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate">
+                            <input type="text" id="month" name="expMonth" placeholder="MM">
+                            <input type="text" id="year" name="expYear" placeholder="YY">
                         </div>
-                    </div>
+                    </fieldset>
                 </div>
                 <div class="card back-card">
                     <div class="black-strip"></div>
                     <div id="securityCode">
-                        <label for="security">CVC/CVV</label>
-                        <input type='text' id='security' name="securityNumbers" placeholder="xxx" aria-labelledby="CVC/CVVcode">
+                        <label id="securityLabel" for="security">CVC/CVV</label>
+                        <div id="securityCode-input">
+                            <input type='text' id='security' name="securityNumbers" placeholder="xxx" aria-labelledby="securityLabel">
+                        </div>
                     </div>
                 </div>
+                <button type="submit" class="submit-btn">Submit</button>
+                <p id="message"></p>
             </form>
         </section>
     </main>
