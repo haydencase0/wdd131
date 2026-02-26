@@ -1,8 +1,8 @@
 const attackedButton = document.querySelector('#attacked');
 const levelButton = document.querySelector('#levelup');
 const resetButton = document.querySelector('#reset');
-const health = document.querySelector('#health')
-const level = document.querySelector('#level')
+const health = document.querySelector('#health');
+const level = document.querySelector('#level');
 let healthAmount = 100;
 let levelTotal = 1;
 
