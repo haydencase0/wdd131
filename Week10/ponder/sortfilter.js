@@ -102,7 +102,8 @@ function search() {
 }
 
 let hikeContainer = document.querySelector('#hike-container');
-let button = document.querySelector('button');
+let button = document.querySelector('#search-button');
+const input = document.querySelector('#search');
 button.addEventListener('click', search);
 
 /* for the enter key to work on search - not just clicking the search button */
@@ -138,17 +139,17 @@ function difficultyTemplate(rating) {
   }
 
 function hikesTemplate(hike) {
-    return `<div class="hike-card">
-  <div class="hike-content">
-    <h2>${hike.name}</h2>
-    <div class="hike-tags">
-      ${tagTemplate(hike.tags)}
+      return `<div class="hike-card">
+    <div class="hike-content">
+      <h2>${hike.name}</h2>
+      <div class="hike-tags">
+        ${tagTemplate(hike.tags)}
+      </div>
+      <img src="${hike.imgSrc}" alt="${hike.imgAlt}">
+      <p>${hike.description}</p>
+      <p>${difficultyTemplate(hike.difficulty)}</p>
     </div>
-    <img src="${hike.imgSrc}" alt="${hike.imgAlt}">
-    <p>${hike.description}</p>
-    <p>${difficultyTemplate(hike.difficulty)}</p>
-  </div>
-</div>`
+  </div>`
 }
 
 function renderHike(hike) {

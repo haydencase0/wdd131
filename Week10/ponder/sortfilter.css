@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(49, 139, 168);
+}
+
+#search-bar {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 33.2rem;
+    width: fit-content;
+}
+
+#hike-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem auto;
+    width: fit-content;
+}
+.hike-card {
+    text-align: left;
+    max-width: 400px;
+}
+.hike-tags button {
+    background-color: rgb(148, 148, 237);
+    pointer-events: none;
+}
