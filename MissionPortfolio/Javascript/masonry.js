@@ -6,162 +6,162 @@ const gallery = [
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538856/suwasakura_iali21.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Shrine in Suwa during Sakura season",
         tags: ["Scenery"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538853/shizuokanight_ma5rl0.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Shizuoka City night sky",
         tags: ["Scenery"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538852/shinkansen_zodgbu.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Japanese Bullet Train (Shinkansen)",
         tags: ["Scenery"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538850/numazuskyline_mtitxu.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Sky line in Numazu",
         tags: ["Scenery"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538848/numazubeach_n6uiud.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Numazu Beach",
         tags: ["Scenery"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538848/nakedfuji_err24q.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Mt. Fuji in the summer",
         tags: ["Scenery"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538846/nagoyaskyline_ndtwca.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Sky line in Nagoya",
         tags: ["Scenery"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538844/nagoyasakura_hcxthk.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Park in Nagoya during Sakura season",
         tags: ["Scenery"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538844/nagoyacastle_x1elgm.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Nagoya Castle",
         tags: ["Scenery"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538843/kanayamashrine_we3obw.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Shrine in Kanayama (Atsuta Jingu)",
         tags: ["Scenery"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538841/gifucastle_blspdz.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Gifu Castle",
         tags: ["Scenery"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538840/cloudyfuji_w8zqqe.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Mt. Fuji but with clouds and snow",
         tags: ["Scenery"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538839/carmountain_n2jz0h.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Top of Kurumayama in Suwa",
         tags: ["Scenery"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538627/toro_s79buj.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Elder Toro and I infront of Gold Clock in Nagoya Station",
         tags: ["People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538627/welcometojapan_ljktkj.jpg",
-        description: "Front of Tokyo Temple",
+        description: "My first steps in Japan at the mission home",
         tags: ["People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538627/thompson_jeyvvx.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Bowling with Elder Thompson",
         tags: ["People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538622/takabataward_dtj2uf.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Takabata Ward ",
         tags: ["People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538621/suwayoungmen_zvdoyc.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Suwa Young Men group after Yakiniku",
         tags: ["People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538621/riosanddugar_uydepd.jpg",
-        description: "Front of Tokyo Temple",
-        tags: ["People"]
+        description: "Elder Rios, Elder Dugarsuren, and I in Numazu",
+        tags: ["People", "Scenery"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538621/saunders_xhaj9b.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Elder Saunders and I infront of evacuation sign",
         tags: ["People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538620/petersen_p5jmb7.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Elder Petersen and I infront of random old train",
         tags: ["People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538617/ouchi_fqegfc.jpg",
-        description: "Front of Tokyo Temple",
-        tags: ["People"]
+        description: "Elder Toro, Elder Ouchi, and I at Minami Arako Station",
+        tags: ["People","Scenery"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538615/muranaka_jl4w7f.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Elder Muranaka (Elder all over the village)",
         tags: ["People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538614/morrow_xnhqra.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Elder Morrow, my final companion",
         tags: ["People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538615/mountainwmorrill_kq0bg8.jpg",
-        description: "Front of Tokyo Temple",
-        tags: ["People"]
+        description: "Elder Morrill and I at the top of Mt. Kurayama",
+        tags: ["People", "Scenery"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538613/moore_yjz3px.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Elder Moore and I on a See Saw",
         tags: ["People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538612/hurdle_gnwwan.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Elder Hurdle and I drinking caramel milk",
         tags: ["People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538611/finalzoneconf_ij5plo.jpg",
-        description: "Front of Tokyo Temple",
+        description: "My final Zone Conference",
         tags: ["People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538611/filipinobrothers_vx7cx0.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Elder Domingo, Elder Astorga and I at transfer day",
         tags: ["People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538610/eldercook_vavm17.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Elder Cook visited the mission",
         tags: ["People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538610/dagangatyakiniku_v6wtzz.jpg",
-        description: "Front of Tokyo Temple",
+        description: "The boys before eating Yakiniku",
         tags: ["People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538609/christmascaroling_duta8z.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Christmas caroling at Shizuoka",
         tags: ["People"]
     },
     {
@@ -171,38 +171,38 @@ const gallery = [
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538192/yakinikudonwmorrow_dawvtj.jpg",
-        description: "Front of Tokyo Temple",
-        tags: ["Food"]
+        description: "Eating a yakiniku bowl",
+        tags: ["People", "Food"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538178/pizzahut_ojsnyo.jpg",
-        description: "Front of Tokyo Temple",
-        tags: ["Food"]
+        description: "First time having pizza in Japan",
+        tags: ["Food", "People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538179/yakiniku_amqwev.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Eating Yakiniku",
         tags: ["Food"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538179/wagyuburger_gyrgkw.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Tasty wagyu burger thing",
         tags: ["Food"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538179/sushi_pm8fni.jpg",
-        description: "Front of Tokyo Temple",
+        description: "First time eating sushi",
         tags: ["Food"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538179/suwaramen_fxzown.jpg",
-        description: "Front of Tokyo Temple",
-        tags: ["Food"]
+        description: "Tasty ramen bowl in Suwa with Brother Francis and Elder Morrill",
+        tags: ["Food", "People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538177/nagoyaburger_rheqy9.jpg",
-        description: "Front of Tokyo Temple",
-        tags: ["Food"]
+        description: "Decent burger in the Nagoya Underground with Elder Muranaka",
+        tags: ["Food", "People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538178/okonomiyaki_cohbg7.jpg",
@@ -338,8 +338,15 @@ function loadMoreImages() {
         img.loading = "lazy";        
 
         img.addEventListener("click", () => {
-            openModal(itemData.image, itemData.description);
+            const largeImage = itemData.image.replace(
+                "/upload/",
+                "/upload/w_1600,q_auto,f_auto/"
+            );
+            console.log("Large:", largeImage);
+            openModal(largeImage, itemData.description);
         });
+        console.log("Small:", img);
+        
 
         item.appendChild(img);
         grid.appendChild(item);
