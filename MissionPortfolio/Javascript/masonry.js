@@ -156,7 +156,7 @@ const gallery = [
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538610/dagangatyakiniku_v6wtzz.jpg",
-        description: "The boys before eating Yakiniku",
+        description: "The boys(Elder Thompson, Elder Gonzalez, Elder Muranaka, and me) before eating Yakiniku",
         tags: ["People"]
     },
     {
@@ -206,62 +206,62 @@ const gallery = [
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538178/okonomiyaki_cohbg7.jpg",
-        description: "Front of Tokyo Temple",
-        tags: ["Food"]
+        description: "Tasty Okonomiyaki(Japanese savory pancake) with Elder Gavin, Elder Donovan and Elder Russell",
+        tags: ["Food", "People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538178/shizuokacurry_aszuuw.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Really good curry in Shizuoka. It includes pineapple chicken, beef curry, and mapodofu",
         tags: ["Food"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538178/spicynotramen_bxizwu.jpg",
-        description: "Front of Tokyo Temple",
+        description: "The spiciest food I had in Japan. It's a soupless ramen like thing.",
         tags: ["Food"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538177/nagoyaramen_ei2vqy.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Ramen in Nagoya. It was covered in Garlic and made my breath smell like garlic for a few days.",
         tags: ["Food"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538177/homemadeokonomiyaki_uplgo7.jpg",
-        description: "Front of Tokyo Temple",
-        tags: ["Food"]
+        description: "I was taught how to make my own okonomiyaki(Japanese savory pancake)w/Sister Rodriguez, Sister Fujikawa, Elder Muranaka",
+        tags: ["Food","People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538176/hotdog_u0hkuu.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Tasty hotdog shop in Numazu",
         tags: ["Food"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538176/indocurry_cmtwiw.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Amazing Indo curry and naan",
         tags: ["Food"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538177/mountainicecream_glmrh4.jpg",
-        description: "Front of Tokyo Temple",
-        tags: ["Food"]
+        description: "Eating ice cream after hiking up kurumayama with Brother Francis and Elder Morrill",
+        tags: ["Food", "People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538177/bamboonoodles_cyyzne.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Takabata ward party where we had soba noodles go down the bamboo shoot",
         tags: ["Food"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538176/classicjapaneselunch_obo1ir.jpg",
-        description: "Front of Tokyo Temple",
+        description: "Traditional Japanese lunch tray that cost less than 5 dollars",
         tags: ["Food"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538176/fujipizza_bxjesa.jpg",
-        description: "Front of Tokyo Temple",
-        tags: ["Food"]
+        description: "Weird pizza, kind of tasted like fish, in Fuji w/ Elder Saunders, Elder Mitchell, and Elder Domingo",
+        tags: ["Food", "People"]
     },
     {
         image: "https://res.cloudinary.com/dasryldyl/image/upload/v1774538176/burrito_csdwjh.jpg",
-        description: "Front of Tokyo Temple",
+        description: "My final meal in Japan was a beef burrito",
         tags: ["Food"]
     }
 ]
@@ -381,7 +381,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (path.includes("food")) {
         loadGallery("Food");
     } else if (path.includes("scenery")) {
-        loadGallery("Places");
+        loadGallery("Scenery");
     } else {
         loadGallery();
     }
