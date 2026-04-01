@@ -271,6 +271,7 @@ let currentIndex = 0;
 const batchSize = 15;
 let isLoading = false;
 let currentFilter = null;
+let currentSearch = "";
 
 const masonry = new Masonry(grid, {
     itemSelector: ".grid-item",
@@ -278,8 +279,9 @@ const masonry = new Masonry(grid, {
     gutter: 10
 });
 
-function loadGallery(filterTag = null) {
+function loadGallery(filterTag = null, searchText = "") {
     currentFilter = filterTag;
+    currentSearch = searchText.toLowerCase();
     currentIndex = 0;
 
     grid.innerHTML = "";
@@ -314,10 +316,17 @@ function loadMoreImages() {
     if (isLoading) return;
     isLoading = true;
 
-    const filtered = currentFilter
-        ? gallery.filter(item => item.tags.includes(currentFilter))
-        : gallery;
+    const filtered = gallery.filter(item => {
+        const matchesTag = currentFilter
+            ? item.tags.includes(currentFilter)
+            : true;
 
+        const matchesSearch = currentSearch
+            ? (item.description || "").toLowerCase().includes(currentSearch)
+            : true;
+
+        return matchesTag && matchesSearch;
+    });
     const nextBatch = filtered.slice(currentIndex, currentIndex + batchSize);
 
     if (nextBatch.length === 0) {
@@ -365,6 +374,26 @@ window.addEventListener("scroll", () => {
 
     if (scrollPosition >= pageHeight - 100) {
         loadMoreImages();
+    }
+});
+
+const searchInput = document.querySelector('#search');
+const searchButton = document.querySelector('#search-btn');
+
+function search(event) {
+    if (event) {
+        event.preventDefault();
+    }
+
+    const searchQuery = searchInput.value.trim();
+    loadGallery(currentFilter, searchQuery);
+}
+
+searchButton.addEventListener('click', search);
+
+searchInput.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        search(event);
     }
 });
 
