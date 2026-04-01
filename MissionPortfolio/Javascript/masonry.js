@@ -334,7 +334,7 @@ function loadMoreImages() {
             "/upload/",
             "/upload/w_500,q_auto,f_auto/"
         );
-
+        img.alt = itemData.description;
         img.loading = "lazy";        
 
         img.addEventListener("click", () => {
@@ -342,11 +342,8 @@ function loadMoreImages() {
                 "/upload/",
                 "/upload/w_1600,q_auto,f_auto/"
             );
-            console.log("Large:", largeImage);
             openModal(largeImage, itemData.description);
-        });
-        console.log("Small:", img);
-        
+        });        
 
         item.appendChild(img);
         grid.appendChild(item);
